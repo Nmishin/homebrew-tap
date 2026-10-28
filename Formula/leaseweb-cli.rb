@@ -5,13 +5,13 @@
 class LeasewebCli < Formula
   desc "The command line interface for Leaseweb API"
   homepage "https://github.com/Nmishin/leaseweb-cli"
-  version "1.3.0"
+  version "1.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.0/leaseweb-cli-1.3.0-darwin-x86_64.tar.gz"
-      sha256 "9e9f670832a610b307dfccdfc56f856cad5c303817aaceb5d09e948031c4e2a4"
+      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.1/leaseweb-cli-1.3.1-darwin-x86_64.tar.gz"
+      sha256 "fd00e3347c8ac933d716bbda341b3c99ab8d4060f6d65a4186b22e50eadb9a87"
 
       define_method(:install) do
         bin.install "leaseweb-cli"
@@ -19,8 +19,8 @@ class LeasewebCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.0/leaseweb-cli-1.3.0-darwin-arm64.tar.gz"
-      sha256 "ddf754e597e185f106f75095a0f1c4bbe1f06cdf2c1c0dd15b52d1f2e3bf5621"
+      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.1/leaseweb-cli-1.3.1-darwin-arm64.tar.gz"
+      sha256 "188f9a935d28443848f4ede8715ed557ea39128c06d94c00b354410e762b8521"
 
       define_method(:install) do
         bin.install "leaseweb-cli"
@@ -31,16 +31,16 @@ class LeasewebCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.0/leaseweb-cli-1.3.0-linux-x86_64.tar.gz"
-      sha256 "3a3349908776e26015f18150157b3f168732bdf25ebb60a1d8eb4404cbdfebd4"
+      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.1/leaseweb-cli-1.3.1-linux-x86_64.tar.gz"
+      sha256 "1e3ae3023bd182de7842f5aa3f78307f0f0bd3e5a4f707e278d531e415209c48"
       define_method(:install) do
         bin.install "leaseweb-cli"
         chmod 0555, bin/"leaseweb-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.0/leaseweb-cli-1.3.0-linux-arm64.tar.gz"
-      sha256 "836d2b3c56f17c954330f1851677e9374bfda504fa08e3e04ee55db8c9ab17a1"
+      url "https://github.com/Nmishin/leaseweb-cli/releases/download/v1.3.1/leaseweb-cli-1.3.1-linux-arm64.tar.gz"
+      sha256 "05b61d32e1be9afe36b751d47c8e2d08ae336f2948da86ec1611fa16468ceb4a"
       define_method(:install) do
         bin.install "leaseweb-cli"
         chmod 0555, bin/"leaseweb-cli"
